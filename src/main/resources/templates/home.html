@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Weather Input Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+           Enter Weather Details !!!
+        </div>
+        <form action="/submit-weather" method="post">
+           <div class="form-row">
+              <div class="input-data">
+                <input type="number" step="0.01" id="precipitation" name="precipitation" placeholder="Precipitation" required>
+                <div class="underline"></div>
+              </div>
+              <div class="input-data">
+                <input type="number" step="0.01" id="temp_max" name="temp_max" placeholder="Max Temperature" required>
+                <div class="underline"></div>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                <input type="number" step="0.01" id="temp_min" name="temp_min" placeholder="Min Temperature" required>
+                <div class="underline"></div>
+              </div>
+              <div class="input-data">
+                <input type="number" step="0.01" id="wind" name="wind" placeholder="Wind Speed" required>
+                <div class="underline"></div>
+              </div>
+           </div>
+           <div class="form-row submit-btn">
+              <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="Submit">
+              </div>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
